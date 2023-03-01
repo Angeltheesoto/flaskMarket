@@ -3,17 +3,16 @@ import React, { useState, useEffect } from "react";
 function App() {
   const [data, setData] = useState([{}]);
 
-  let fetchData = () => {
-    fetch("/members")
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-        console.log("Data fetched succussfully: ", data);
-      })
-      .catch((err) => console.log("Error: ", err));
-  };
-
   useEffect(() => {
+    let fetchData = async () => {
+      await fetch("/members")
+        .then((res) => res.json())
+        .then((data) => {
+          setData(data);
+          console.log("Data fetched succussfully: ", data);
+        })
+        .catch((err) => console.log("Error: ", err));
+    };
     fetchData();
   }, []);
 
