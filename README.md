@@ -11,6 +11,6 @@ NPM PACKAGES
 [axios] =
 
 PIP PACKAGES
-[flask] = backend web app framework.
+[pip install flask] = backend web app framework.
 [pip install -U flask-cors] =
  -->
