@@ -6,11 +6,11 @@ activate virtual environment in server with [source venv/scripts/activate]
 run server [python server.py]
 run client [npm start]
 
-NPM PACKAGES
+!NPM PACKAGES
 [create-react-app] = frontend web app library.
 [axios] =
 
-PIP PACKAGES
+!PIP PACKAGES
 [pip install flask] = backend web app framework.
 [pip install -U flask-cors] =
 [pip install flask sqlalchemy] =
