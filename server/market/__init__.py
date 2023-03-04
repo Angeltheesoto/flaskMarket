@@ -11,9 +11,6 @@ CORS(app)
 with app.app_context():
     db.create_all()
 
-# routes
-from market import routes
-
 # When you deploy, change debug to false.
 if __name__ == '__main__':
     app.run(debug=True)

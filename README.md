@@ -36,7 +36,7 @@ run client [npm start]
 
 ?Start the db up again
 >>> python
->>> from server import app, db
+>>> from server import app, db | from market.models import db
 >>> app.app_context().push()
 >>> db.create_all()
 >>> from server import Item
