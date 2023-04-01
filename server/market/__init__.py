@@ -4,8 +4,12 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///market.db'
+app.config['SECRET_KEY'] = 'ed20cd685c789acaea6fdb10'
 db = SQLAlchemy(app)
 CORS(app)
+
+# routes
+from market import routes
 
 # helps with database error
 with app.app_context():

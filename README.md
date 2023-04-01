@@ -3,7 +3,7 @@
 <!--
 create a virtual environment [python3 -m venv venv]
 activate virtual environment in server with [source venv/scripts/activate]
-run server [python server.py]
+run server [python server.py] [python run.py]
 run client [npm start]
 
 !NPM PACKAGES
@@ -14,6 +14,8 @@ run client [npm start]
 [pip install flask] = backend web app framework.
 [pip install -U flask-cors] =
 [pip install flask sqlalchemy] =
+[pip install flask-wtf] =
+[pip install wtforms] =
  -->
 
 <!--
@@ -21,7 +23,7 @@ run client [npm start]
 >>> python
 
 ?Create the db
->>> from server import app, db
+>>> from server import app, db | from market import app, db
 >>> app.app_context().push()
 >>> db.create_all()
 
